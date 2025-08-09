@@ -1,0 +1,5 @@
+# Скопируйте этот файл в .env и заполните значения
+TELEGRAM_BOT_TOKEN=put-your-telegram-bot-token-here 
+GEMINI_API_KEY=api-key
+# парсинг с сайта итмо, 0 выключен 1 включен
+STARTUP_RUN_JOB=0

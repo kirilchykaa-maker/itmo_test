@@ -3,8 +3,15 @@ from contextlib import asynccontextmanager
 import platform
 import asyncio
 import subprocess
+import sys
+import os
+import logging
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
+from dotenv import load_dotenv
+
+# Загрузка переменных окружения из .env (если есть)
+load_dotenv()
 
 # Установка совместимой политики цикла событий для Windows
 if platform.system() == "Windows":
@@ -18,27 +25,74 @@ LATEST_FILE = DATA_DIR / "latest.txt"
 PROCESSED_DIR = Path("data/processed")
 
 LATEST_PDF: Path | None = None
+BOT_PROC: subprocess.Popen | None = None
+
+# Флаг запуска первичных задач (скачивание/конвертация) при старте
+STARTUP_RUN_JOBS = os.getenv("STARTUP_RUN_JOBS", "1").lower() in ("1", "true", "yes", "on")
 
 
 def run_cmd(args: list[str]) -> None:
     subprocess.run(args, check=True)
 
 
+def start_bot_subprocess() -> subprocess.Popen | None:
+    # Бот сам подхватит TELEGRAM_BOT_TOKEN из .env через python-dotenv
+    token_present = os.getenv("TELEGRAM_BOT_TOKEN") is not None
+    if not token_present:
+        # Не блокируем запуск сервера, просто предупреждаем
+        logging.warning("TELEGRAM_BOT_TOKEN не задан — Telegram-бот не будет запущен")
+        return None
+    try:
+        proc = subprocess.Popen(
+            [sys.executable, "-m", "services.telegram_bot"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.STDOUT,
+            cwd=str(Path.cwd()),
+            env=os.environ.copy(),
+            creationflags=(subprocess.CREATE_NO_WINDOW if platform.system() == "Windows" else 0),
+        )
+        logging.info("Telegram-бот запущен как подпроцесс (polling)")
+        return proc
+    except Exception as e:
+        logging.exception("Не удалось запустить Telegram-бот: %s", e)
+        return None
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global LATEST_PDF
-    # Выполняем downloader и converter как отдельные скрипты ДО запуска сервера
-    # 1) Скачать PDF и записать путь в data/latest.txt
-    run_cmd(["python", "-m", "src.downloader"])
-    if not LATEST_FILE.exists():
-        raise RuntimeError("Не удалось определить путь к последнему PDF")
-    pdf_path = Path(LATEST_FILE.read_text(encoding="utf-8").strip())
-    # 2) Конвертация PDF → TXT/XML/structured
-    run_cmd(["python", "-m", "src.converter", str(pdf_path)])
-    LATEST_PDF = pdf_path
+    global LATEST_PDF, BOT_PROC
+
+    j = False
+    if j:
+        # Выполняем downloader и converter как отдельные скрипты ДО запуска сервера
+        run_cmd([sys.executable, "-m", "src.downloader"])
+        if not LATEST_FILE.exists():
+            raise RuntimeError("Не удалось определить путь к последнему PDF")
+        pdf_path = Path(LATEST_FILE.read_text(encoding="utf-8").strip())
+        run_cmd([sys.executable, "-m", "src.converter", str(pdf_path)])
+        LATEST_PDF = pdf_path
+    else:
+        # Режим без первичных задач: пробуем использовать уже имеющийся latest.txt
+        if LATEST_FILE.exists():
+            pdf_path = Path(LATEST_FILE.read_text(encoding="utf-8").strip())
+            LATEST_PDF = pdf_path if pdf_path.exists() else None
+        else:
+            LATEST_PDF = None
+
+    # Запускаем Telegram-бота (если задан токен)
+    BOT_PROC = start_bot_subprocess()
 
     yield
-    # Завершение: ничего не требуется
+    # Завершение: останавливаем бота, если он запущен
+    if BOT_PROC is not None:
+        try:
+            BOT_PROC.terminate()
+            try:
+                BOT_PROC.wait(timeout=5)
+            except Exception:
+                BOT_PROC.kill()
+        except Exception:
+            pass
 
 
 app = FastAPI(title="Study Plan Parser", lifespan=lifespan)
@@ -52,14 +106,16 @@ def root():
 @app.get("/status")
 def status():
     if LATEST_PDF is None:
-        return {"ready": False}
+        return {"ready": False, "startup_run_jobs": STARTUP_RUN_JOBS}
     stem = LATEST_PDF.stem
     return {
         "ready": True,
+        "startup_run_jobs": STARTUP_RUN_JOBS,
         "pdf": str(LATEST_PDF),
         "txt": str(PROCESSED_DIR / f"{stem}.txt"),
         "xml": str(PROCESSED_DIR / f"{stem}.xml"),
         "structured": str(PROCESSED_DIR / f"{stem}.structured.xml"),
+        "bot_running": BOT_PROC is not None and (BOT_PROC.poll() is None),
     }
 
 

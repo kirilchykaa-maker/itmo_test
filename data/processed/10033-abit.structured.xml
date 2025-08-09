@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<study_plan>
+  <block title="Блок 1. Модули (дисциплины)">
+    <section title="Обязательные дисциплины. 1 семестр" semester="1">
+    </section>
+    <section title="Пул выборных дисциплин. 1 семестр" semester="1">
+    </section>
+    <section title="Практика применения машинного обучения">
+      <discipline title="Алгоритмы и структуры данных" credits="3" hours="108" semester="1"/>
+      <discipline title="Математическая статистика" credits="3" hours="108" semester="1"/>
+      <discipline title="Разработка веб-приложений (Python Backend)" credits="6" hours="216" semester="1"/>
+      <discipline title="Программирование на С++" credits="3" hours="108" semester="1"/>
+      <discipline title="Введение в МО (Python) и Продвинутое МО (Python)" credits="3" hours="108" semester="1"/>
+      <discipline title="Технологии обработки естественного языка" credits="6" hours="216" semester="1"/>
+      <discipline title="Автоматическое машинное обучение" credits="3" hours="108" semester="1"/>
+      <discipline title="Обработка и генерация изображений" credits="3" hours="108" semester="1"/>
+      <discipline title="Проектирование и разработка рекомендательных систем (продвинутый уровень)" credits="6" hours="216" semester="1"/>
+      <discipline title="Основы глубокого обучения" credits="3" hours="108" semester="1"/>
+      <discipline title="Продвинутое МО (Python) и Глубокое обучение" credits="3" hours="108" semester="1"/>
+      <discipline title="Введение в большие языковые модели (LLM)" credits="3" hours="108" semester="1"/>
+      <discipline title="Проектирование систем машинного обучения (ML System Design)" credits="6" hours="216" semester="1"/>
+      <discipline title="Проектирование микросервисов" credits="6" hours="216" semester="1"/>
+      <discipline title="Хранение больших данных и Введение в МО (Python)" credits="3" hours="108" semester="1"/>
+      <discipline title="Вычисления на графических процессорах (GPU)" credits="6" hours="216" semester="1"/>
+      <discipline title="UNIX/Linux системы" credits="3" hours="108" semester="1"/>
+      <discipline title="Инструменты разработки data-driven решений" credits="3" hours="108" semester="1"/>
+      <discipline title="Контейнеризация и оркестрация приложений" credits="3" hours="108" semester="1"/>
+      <discipline title="Продуктовые исследования" credits="3" hours="108" semester="1"/>
+      <discipline title="Графические интерфейсы" credits="3" hours="108" semester="1"/>
+      <discipline title="Создание интеллектуальных агентов" credits="6" hours="216" semester="1"/>
+      <discipline title="Прикладной анализ временных рядов" credits="3" hours="108" semester="1"/>
+      <discipline title="Процессы и методологии разработки решений на основе ИИ" credits="3" hours="108" semester="1"/>
+      <discipline title="Инжиниринг управления данными" credits="3" hours="108" semester="1"/>
+      <discipline title="Бизнес-аналитика для инженеров" credits="3" hours="108" semester="1"/>
+      <discipline title="Математика для машинного обучения и анализа данных" credits="3" hours="108" semester="1"/>
+      <discipline title="Языки программирования" credits="3" hours="108" semester="1"/>
+      <discipline title="Основы машинного обучения" credits="3" hours="108" semester="1"/>
+      <discipline title="Инженерные практики в ML и анализе данных" credits="6" hours="216" semester="1"/>
+      <discipline title="Дополнительные разделы машинного обучения" credits="3" hours="108" semester="1"/>
+    </section>
+    <section title="Пул выборных дисциплин. 2 семестр" semester="2">
+      <discipline title="Глубокое обучение на практике" credits="6" hours="216" semester="2"/>
+      <discipline title="Воркшоп по прикладному использованию языковых и генеративных моделей" credits="6" hours="216" semester="2"/>
+      <discipline title="Глубокие генеративные модели (Deep Generative Models)" credits="6" hours="216" semester="2"/>
+      <discipline title="Дополнительные разделы математики и алгоритмов" credits="3" hours="108" semester="2"/>
+      <discipline title="Программирование на Python (продвинутый уровень) Индивидуальная профессиональная подготовка (по профессиональным областям, по профессиональным ролям, по уровню сложности и др.) DevOps практики и инструменты" credits="3" hours="108" semester="2"/>
+      <discipline title="Технологии и практики MLOps" credits="6" hours="216" semester="2"/>
+      <discipline title="Продвинутое МО (Python) и Автоматическая обработка текстов" credits="3" hours="108" semester="2"/>
+      <discipline title="Продвинутое МО (Python) и Обработка изображений" credits="3" hours="108" semester="2"/>
+      <discipline title="Прикладная математика и статистика / Applied Math and Statistics" credits="6" hours="216" semester="2"/>
+      <discipline title="Автоматическая обработка текстов и Социальные сети" credits="3" hours="108" semester="2"/>
+      <discipline title="Специальные главы геномики" credits="3" hours="108" semester="2"/>
+      <discipline title="Специальные главы биоинформатики" credits="3" hours="108" semester="2"/>
+      <discipline title="Нейросети в химии / Neural Networks in Chemistry" credits="3" hours="108" semester="2"/>
+      <discipline title="Обучение с подкреплением" credits="6" hours="216" semester="2"/>
+      <discipline title="Интеллектуальные агенты и большие языковые модели" credits="6" hours="216" semester="2"/>
+      <discipline title="Разработка приложений разговорного искусственного интеллекта" credits="3" hours="108" semester="2"/>
+      <discipline title="Распознавание и генерация речи" credits="3" hours="108" semester="2"/>
+      <discipline title="Технологии обработки естественного языка" credits="6" hours="216" semester="2"/>
+      <discipline title="Компьютерное зрение (продвинутый уровень)" credits="6" hours="216" semester="2"/>
+      <discipline title="Технологии компьютерного зрения" credits="3" hours="108" semester="2"/>
+      <discipline title="Обработка изображений и Компьютерное зрение" credits="3" hours="108" semester="2"/>
+      <discipline title="Автоматическая обработка текстов и Обработка изображений" credits="3" hours="108" semester="2"/>
+      <discipline title="А/В тестирование" credits="3" hours="108" semester="2"/>
+      <discipline title="Информационный поиск" credits="3" hours="108" semester="2"/>
+      <discipline title="Управление данными" credits="3" hours="108" semester="2"/>
+      <discipline title="Сбор и разметка данных для машинного обучения" credits="3" hours="108" semester="2"/>
+      <discipline title="Проектирование систем машинного обучения (ML System Design)" credits="6" hours="216" semester="2"/>
+      <discipline title="Безопасность ИИ" credits="3" hours="108" semester="2"/>
+      <discipline title="Управление проектами в Data Science" credits="3" hours="108" semester="2"/>
+      <discipline title="Продуктовый дизайн и прототипирование AI-решений" credits="3" hours="108" semester="2"/>
+      <discipline title="Бизнес-анализ" credits="3" hours="108" semester="2"/>
+      <discipline title="Практики менторства и развития в Data Science" credits="3" hours="108" semester="2"/>
+      <discipline title="Основы построения рекомендательных систем" credits="6" hours="216" semester="2"/>
+      <discipline title="Инженерия данных" credits="3" hours="108" semester="2"/>
+      <discipline title="Системы обработки и анализа больших массивов данных" credits="6" hours="216" semester="2"/>
+      <discipline title="Управление технологическим продуктом" credits="3" hours="108" semester="2"/>
+      <discipline title="Языки программирования для работы с данными" credits="3" hours="108" semester="2"/>
+      <discipline title="Машинное обучение" credits="3" hours="108" semester="2"/>
+      <discipline title="Задачи машинного обучения" credits="3" hours="108" semester="2"/>
+    </section>
+    <section title="Пул выборных дисциплин. 3 семестр" semester="3">
+      <discipline title="Алгоритмы и структуры данных" credits="3" hours="108" semester="3"/>
+      <discipline title="Математическая статистика" credits="3" hours="108" semester="3"/>
+      <discipline title="Прикладной анализ временных рядов" credits="3" hours="108" semester="3"/>
+      <discipline title="Разработка веб-приложений (Python Backend)" credits="6" hours="216" semester="3"/>
+      <discipline title="Программирование на С++" credits="3" hours="108" semester="3"/>
+      <discipline title="Введение в МО (Python) и Продвинутое МО (Python)" credits="3" hours="108" semester="3"/>
+      <discipline title="Технологии обработки естественного языка" credits="6" hours="216" semester="3"/>
+      <discipline title="Автоматическое машинное обучение" credits="3" hours="108" semester="3"/>
+      <discipline title="Обработка и генерация изображений" credits="3" hours="108" semester="3"/>
+      <discipline title="Проектирование и разработка рекомендательных систем (продвинутый уровень)" credits="6" hours="216" semester="3"/>
+      <discipline title="Глубокое обучение" credits="3" hours="108" semester="3"/>
+      <discipline title="Продвинутое МО (Python) и Глубокое обучение" credits="3" hours="108" semester="3"/>
+      <discipline title="Введение в большие языковые модели (LLM)" credits="3" hours="108" semester="3"/>
+      <discipline title="Мультимодальные генеративные модели искусственного интеллекта" credits="3" hours="108" semester="3"/>
+      <discipline title="Проектирование систем машинного обучения (ML System Design)" credits="6" hours="216" semester="3"/>
+      <discipline title="Проектирование микросервисов" credits="6" hours="216" semester="3"/>
+      <discipline title="Хранение больших данных и Введение в МО (Python)" credits="3" hours="108" semester="3"/>
+      <discipline title="Базы данных" credits="3" hours="108" semester="3"/>
+      <discipline title="Вычисления на графических процессорах (GPU)" credits="6" hours="216" semester="3"/>
+      <discipline title="UNIX/Linux системы" credits="3" hours="108" semester="3"/>
+      <discipline title="Инструменты разработки data-driven решений" credits="3" hours="108" semester="3"/>
+      <discipline title="Контейнеризация и оркестрация приложений" credits="3" hours="108" semester="3"/>
+      <discipline title="Продуктовые исследования" credits="3" hours="108" semester="3"/>
+      <discipline title="Графические интерфейсы" credits="3" hours="108" semester="3"/>
+      <discipline title="Воркшоп по применению ИИ" credits="6" hours="216" semester="3"/>
+      <discipline title="Мастерская по проектам для работы с данными" credits="6" hours="216" semester="3"/>
+      <discipline title="Инжиниринг управления данными" credits="3" hours="108" semester="3"/>
+      <discipline title="Прикладная математика для машинного обучения" credits="3" hours="108" semester="3"/>
+      <discipline title="Языки программирования. Продвинутый уровень" credits="3" hours="108" semester="3"/>
+      <discipline title="Продвинутое машинное обучение" credits="3" hours="108" semester="3"/>
+      <discipline title="Прикладные задачи машинного обучения" credits="3" hours="108" semester="3"/>
+      <discipline title="Бизнес-аналитика" credits="3" hours="108" semester="3"/>
+      <discipline title="Прикладные инструменты разработки" credits="6" hours="216" semester="3"/>
+    </section>
+    <section title="Пул выборных дисциплин. 4 семестр" semester="4">
+      <discipline title="Воркшоп по прикладному использованию языковых и генеративных моделей" credits="6" hours="216" semester="4"/>
+      <discipline title="Глубокие генеративные модели (Deep Generative Models)" credits="6" hours="216" semester="4"/>
+      <discipline title="Дополнительные разделы математики и алгоритмов" credits="3" hours="108" semester="4"/>
+      <discipline title="Программирование на Python (продвинутый уровень)" credits="3" hours="108" semester="4"/>
+      <discipline title="DevOps практики и инструменты" credits="3" hours="108" semester="4"/>
+      <discipline title="Технологии и практики MLOps" credits="6" hours="216" semester="4"/>
+      <discipline title="Продвинутое МО (Python) и Автоматическая обработка текстов" credits="3" hours="108" semester="4"/>
+      <discipline title="Продвинутое МО (Python) и Обработка изображений" credits="3" hours="108" semester="4"/>
+      <discipline title="Прикладная математика и статистика / Applied Math and Statistics" credits="6" hours="216" semester="4"/>
+      <discipline title="Автоматическая обработка текстов и Социальные сети" credits="3" hours="108" semester="4"/>
+      <discipline title="Специальные главы геномики" credits="3" hours="108" semester="4"/>
+      <discipline title="Специальные главы биоинформатики" credits="3" hours="108" semester="4"/>
+      <discipline title="Нейросети в химии / Neural Networks in Chemistry" credits="3" hours="108" semester="4"/>
+      <discipline title="Обучение с подкреплением" credits="6" hours="216" semester="4"/>
+      <discipline title="Интеллектуальные агенты и большие языковые модели" credits="6" hours="216" semester="4"/>
+      <discipline title="Разработка приложений разговорного искусственного интеллекта" credits="3" hours="108" semester="4"/>
+      <discipline title="Распознавание и генерация речи" credits="3" hours="108" semester="4"/>
+      <discipline title="Технологии обработки естественного языка" credits="6" hours="216" semester="4"/>
+      <discipline title="Компьютерное зрение (продвинутый уровень)" credits="6" hours="216" semester="4"/>
+      <discipline title="Технологии компьютерного зрения" credits="3" hours="108" semester="4"/>
+      <discipline title="Обработка изображений и Компьютерное зрение" credits="3" hours="108" semester="4"/>
+      <discipline title="Автоматическая обработка текстов и Обработка изображений" credits="3" hours="108" semester="4"/>
+      <discipline title="А/В тестирование" credits="3" hours="108" semester="4"/>
+      <discipline title="Основы построения рекомендательных систем" credits="6" hours="216" semester="4"/>
+      <discipline title="Управление данными" credits="3" hours="108" semester="4"/>
+      <discipline title="Инженерия данных" credits="3" hours="108" semester="4"/>
+      <discipline title="Сбор и разметка данных для машинного обучения" credits="3" hours="108" semester="4"/>
+      <discipline title="Системы обработки и анализа больших массивов данных" credits="6" hours="216" semester="4"/>
+      <discipline title="Проектирование систем машинного обучения (ML System Design)" credits="6" hours="216" semester="4"/>
+      <discipline title="Безопасность ИИ" credits="3" hours="108" semester="4"/>
+      <discipline title="Управление проектами в Data Science" credits="3" hours="108" semester="4"/>
+      <discipline title="Продуктовый дизайн и прототипирование AI-решений" credits="3" hours="108" semester="4"/>
+      <discipline title="Практики менторства и развития в Data Science" credits="3" hours="108" semester="4"/>
+      <discipline title="Бизнес-анализ" credits="3" hours="108" semester="4"/>
+      <discipline title="Информационный поиск" credits="3" hours="108" semester="4"/>
+      <discipline title="Воркшоп по ML" credits="6" hours="216" semester="4"/>
+      <discipline title="Языки программирования для работы с данными. Продвинутый уровень" credits="3" hours="108" semester="4"/>
+      <discipline title="Продвинутое машинное обучение - дополнительные главы" credits="3" hours="108" semester="4"/>
+      <discipline title="Применение машинного обучения в доменных областях" credits="3" hours="108" semester="4"/>
+      <discipline title="Глубокое обучение и обработка естественного языка" credits="6" hours="216" semester="4"/>
+    </section>
+    <section title="Универсальная (надпрофессиональная) подготовка">
+      <discipline title="Магистратура/Аспирантура ИИ Мировоззренческий модуль + иняз Иностранный язык Иностранный язык 2 сем" credits="3" hours="108" semester="2"/>
+      <discipline title="Английский язык в профессиональной деятельности / English for specific purposes" credits="3" hours="108" semester="2"/>
+      <discipline title="Русский язык как иностранный / Russian as a foreign language" credits="3" hours="108" semester="2"/>
+      <discipline title="Английский язык A2 / English A2" credits="3" hours="108" semester="2"/>
+      <discipline title="Английский язык A1 / English A1 Иностранный язык 1 сем" credits="3" hours="108" semester="1"/>
+      <discipline title="Русский язык как иностранный / Russian as a foreign language" credits="3" hours="108" semester="1"/>
+      <discipline title="Английский язык в профессиональной деятельности / English for specific purposes" credits="3" hours="108" semester="1"/>
+      <discipline title="Английский язык A2 / English A2" credits="3" hours="108" semester="1"/>
+      <discipline title="Английский язык A1 / English A1 Мировоззренческий модуль Предпринимательская культура" credits="3" hours="108" semester="3"/>
+      <discipline title="Стартап-трек: от mvp до бизнеса" credits="3" hours="108" semester="3"/>
+      <discipline title="Создание и развитие технологического бизнеса Креативные технологии" credits="3" hours="108" semester="1"/>
+      <discipline title="Основы концептуального мышления / Introduction to Conceptual Thinking" credits="3" hours="108" semester="1"/>
+      <discipline title="Основы концептуального мышления Мышление" credits="3" hours="108" semester="3"/>
+      <discipline title="Критическое мышление (продвинутый уровень)" credits="3" hours="108" semester="3"/>
+      <discipline title="Навыки критического мышления (продвинутый уровень) / Critical Thinking Skills (advanced)" credits="3" hours="108" semester="3"/>
+      <discipline title="Этика в сфере информационных технологий и искусственного интеллекта Аспирантский трек История и философия науки" credits="3" hours="108" semester="3"/>
+      <discipline title="История и философия науки Иностранный язык" credits="6" hours="216" semester="1"/>
+      <discipline title="Иностранный язык / Foreign Language" credits="3" hours="108" semester="2"/>
+    </section>
+    <section title="Микромодули Soft Skills (1-3 семестры)" semester="3">
+    </section>
+  </block>
+  <block title="Блок 2. Практика">
+    <section title="Обязательная проектная практика">
+    </section>
+    <section title="Проектная практика">
+    </section>
+    <section title="Производственная, преддипломная практика">
+    </section>
+    <section title="Практика по выбору. 2 семестр" semester="2">
+    </section>
+    <section title="Проектная практика">
+    </section>
+    <section title="Научно-исследовательская практика">
+    </section>
+    <section title="Практика по выбору. 3 семестр" semester="3">
+    </section>
+    <section title="Производственная проектно-технологическая практика">
+    </section>
+    <section title="Производственная, научно-исследовательская практика">
+    </section>
+    <section title="Практика по выбору. 4 семестр" semester="4">
+      <discipline title="Проектная работа" credits="12" hours="432" semester="4"/>
+    </section>
+  </block>
+  <block title="Блок 3. ГИА">
+    <section title="Государственная итоговая аттестация">
+    </section>
+  </block>
+  <block title="Блок 4. Факультативные модули (дисциплины)">
+    <section title="Разное">
+      <discipline title="Иностранный язык в профессиональной деятельности (аспирантский трек)" credits="4" hours="144" semester="3"/>
+      <discipline title="Иностранный язык в профессиональной деятельности / Foreign Language for Professional activity Инклюзивный факультатив" credits="0" hours="0" semester="1"/>
+    </section>
+    <section title="Элективные микромодули Soft Skills (1-3 семестры, онлайн)" semester="3">
+    </section>
+  </block>
+</study_plan>
